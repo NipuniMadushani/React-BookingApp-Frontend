@@ -9,7 +9,8 @@ section .section-title {
     text-transform: uppercase;
 }
 #footer {
-    background:black !important;
+    background: #00bbb3 none repeat center center;
+    color: wheat;
 }
 #footer h5{
 	padding-left: 10px;

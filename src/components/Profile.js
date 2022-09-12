@@ -8,7 +8,10 @@ const Profile = () => {
     <div className="container">
       <header className="jumbotron">
         <h3>
-          <strong>{currentUser.username}</strong> Profile
+          {currentUser.picture==null?  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS884yE-aP3PQdStnZ7KZecX04EDdYa2YpRgQ&usqp=CAU" referrerpolicy="no-referrer" style={{width:100,height:100}}></img> : <img src={currentUser.picture} referrerpolicy="no-referrer"></img> }
+          &ensp; &ensp;
+          <strong>{currentUser.name}</strong> Profile
+          
         </h3>
       </header>
       <p>

@@ -3,6 +3,7 @@ import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import { isEmail } from "validator";
+import logo from '../images/login.gif'
 
 import AuthService from "../services/auth.service";
 
@@ -99,15 +100,31 @@ const Register = () => {
       );
     }
   };
-
+  const myStyle={
+    
+//     backgroundImage: 
+// "url('https://th.bing.com/th/id/OIP.NdxcAyR3FHPWfwCzLfqCmgHaEa?pid=ImgDet&rs=1')",
+    // height:'100vh',
+    // marginTop:'-70px',
+    // fontSize:'50px',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+};
   return (
-    <div className="col-md-12">
+    <div className="col-md-12" style={myStyle}>
       <div className="card card-container">
-        <img
-          src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
-          alt="profile-img"
-          className="profile-img-card"
-        />
+      <img src={logo} className="img img-responsive img-circle" alt="login"   style={{
+          width: 150,
+          height: 150,
+          borderRadius: '50%',
+          overflow: 'hidden',
+          // borderWidth: 3,
+          borderColor:"black",
+          alignItems:'center',
+          marginLeft:50
+          
+          
+        }}/>
 
         <Form onSubmit={handleRegister} ref={form}>
           {!successful && (

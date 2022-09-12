@@ -3,6 +3,17 @@ label {
   margin-top: 10px;
 }
 
+.navbar-brand {
+  color: white;
+  font-weight: bold
+}
+
+.nav-link{
+  color: wheat;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+
 .card-container.card {
   max-width: 350px !important;
   padding: 40px 40px;
@@ -19,6 +30,13 @@ label {
   -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+nav{
+  background: #00bbb3 none repeat center center;
+  font-style: italic ;
+  /* background-color: wheat */
+  /* background: linear-gradient(0.25turn, #3f) */
 }
 
 .profile-img-card {
@@ -137,4 +155,102 @@ hr {
   height: 2px;
   background: white;
   width: 50%;
+}
+
+
+.right-box
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+
+
+  /* background-image: url('~src/assets/Miami Dolphins.jpg'); */
+  /*background:url('~src/assets/gettyimages-867339374-2048x2048.jpg') no-repeat;*/
+  background-size: cover;
+  background-position: center;
+}
+
+.or
+{
+  position: absolute;
+  top: 180px;
+  left: 280px;
+  width: 40px;
+  height: 40px;
+  background: #efefef;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  line-height: 40px;
+  text-align: center;
+}
+
+.orN{
+  /* position: absolute; */
+  /* width: 40px;
+  height: 40px; */
+  border-radius: 50%;
+  background: #efefef;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  line-height: 40px;
+  text-align: center;
+}
+
+.loginButton{
+  width: 255px;
+  height: 50px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  color: white;
+  align-items: center;
+  font-weight: bold;
+}
+
+.google{
+  width: 160px;
+  background-color: #df4930;
+}
+
+.facebook{
+  background-color: #507cc0;
+}
+
+.github{
+  background-color: black;
+}
+
+.icon{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.btnFacebook { 
+  width: 260px;
+  height:35px;  
+  border-radius: 4px;
+  background: #3b5998;
+  color:white;
+  border:0px transparent;  
+  text-align: center;
+  margin:5px;
+  display: inline-block;
+}
+
+.btnLinkedin { 
+  width: 260px;
+  height:35px;  
+  border-radius: 4px;
+  background: #3b5998;
+  color:white;
+  border:0px transparent;  
+  text-align: center;
+  margin:5px;
+  display: inline-block;
+  /* cursor: 'pointer' */
 }

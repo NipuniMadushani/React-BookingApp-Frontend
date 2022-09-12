@@ -26,18 +26,25 @@ const login = (username, password) => {
 };
 
 const logout = () => {
+  console.log("log out done");
   localStorage.removeItem("user");
 };
 
 const getCurrentUser = () => {
+  console.log("Currennt User:"+localStorage.getItem("user"))
   return JSON.parse(localStorage.getItem("user"));
 };
+
+const getGoogleUser=()=>{
+  return JSON.parse(localStorage.getItem("user"));
+}
 
 const AuthService = {
   register,
   login,
   logout,
   getCurrentUser,
+  getGoogleUser,
 };
 
 export default AuthService;

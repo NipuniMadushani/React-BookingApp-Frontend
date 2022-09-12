@@ -20,14 +20,13 @@ const Home = () => {
           error.toString();
 
         setContent(_content);
-      }
-    );
+      }    );
   }, []);
 
   return (
     <div className="container">
       <header >
-        <h3>{content}</h3>
+        {/* <h3>{content}</h3> */}
       </header>
 
 <Slider/>
